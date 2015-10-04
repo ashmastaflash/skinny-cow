@@ -1,4 +1,4 @@
-FROM ashmastaflash/rpi2-deb-gr
+FROM ashmastaflash/rp2-deb-gr
 
 #First, we remove documentation...
 RUN find /usr/share/doc -depth -type f ! -name copyright|xargs rm || true && \
