@@ -11,4 +11,4 @@ RUN /bin/rm -rf /usr/share/lintian/* /usr/share/linda/* /var/cache/man/*
 #RUN dpkg -l | awk '{print $2}' | awk -F: '{print $1 }' | egrep *-dev$ | xargs dpkg -r
 
 # Clear history
-RUN history -c
+#RUN history -c
