@@ -1,4 +1,4 @@
-FROM ashmastaflash/rp2-deb-gr
+FROM ashmastaflash/big-fat-arm-radio
 
 #First, we remove documentation...
 RUN /usr/bin/find /usr/share/doc -depth -type f 
