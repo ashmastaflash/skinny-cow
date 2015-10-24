@@ -7,8 +7,8 @@ RUN /usr/bin/find /usr/share/doc -empty|/usr/bin/xargs /bin/rmdir
 RUN /bin/rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/*
 RUN /bin/rm -rf /usr/share/lintian/* /usr/share/linda/* /var/cache/man/*
 
-# Remove all development packages
-RUN dpkg -l | awk '{print $2}' | awk -F: '{print $1 }' | egrep *-dev$ | xargs dpkg -r
+# Remove all development packages... try this later if it's still too big...
+#RUN dpkg -l | awk '{print $2}' | awk -F: '{print $1 }' | egrep *-dev$ | xargs dpkg -r
 
 # Clear history
 RUN history -c
